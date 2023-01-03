@@ -78,7 +78,7 @@ class Keylogger:
 		
 	def create_file(self):
 	# creates a file in current directory with current keylogs stored in the self.log variable
-		with open(os.path.join("/Users/christian/Documents/pythonScripts/keylogger", f"{self.filename}.txt"), "w") as f:
+		with open(os.path.join("/Users/christian/Documents/pythonScripts/pythonKeylogger", f"{self.filename}.txt"), "w") as f:
 			print(self.log, file=f)
 			print(f"[+] Saved {self.filename}.txt")
 	
